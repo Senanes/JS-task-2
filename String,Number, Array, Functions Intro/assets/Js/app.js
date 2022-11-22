@@ -28,6 +28,23 @@ function myFunction1() {
 function Show() {
 
   let x = document.getElementById("test").value;
+  y=x.slice(-3, -2);
+  if (y==1){
+    document.body.style.backgroundColor = "blue"
+    text = "Səhər qrupu"
+  }
+
+  else if (y==2){
+    document.body.style.backgroundColor = "yellow"
+    text = "Günorta qrupu"
+  }
+
+  else if(y==3) {
+    document.body.style.backgroundColor = "black"
+    text = "Axşam qrupu"
+  }
+
+  document.getElementById("test").innerHTML = text
   
 
 }
